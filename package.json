@@ -1,5 +1,36 @@
 {
   "devDependencies": {
     "jest-fetch-mock": "^1.6.5"
-  }
+  },
+  "name": "cloudflare-worker-test-harness",
+  "description": "### What is included?",
+  "version": "0.0.1",
+  "main": "index.js",
+  "dependencies": {
+    "encoding": "^0.1.12",
+    "is-stream": "^1.1.0",
+    "iconv-lite": "^0.4.24",
+    "isomorphic-fetch": "^2.2.1",
+    "whatwg-fetch": "^3.0.0",
+    "node-fetch": "^1.7.3",
+    "safer-buffer": "^2.1.2",
+    "promise-polyfill": "^7.1.2"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/envato/cloudflare-worker-test-harness.git"
+  },
+  "keywords": [
+    "cloudflare",
+    "worker"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/envato/cloudflare-worker-test-harness/issues"
+  },
+  "homepage": "https://github.com/envato/cloudflare-worker-test-harness#readme"
 }
