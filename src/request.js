@@ -25,7 +25,8 @@ global.Request = class Request extends OldRequest {
     super(input, options)
 
     if (options && options.cf) {
-      sanitisedOptions = options.cf.filter(feature => cfFeatures.includes(feature));
+      optionKeys = Object.keys(opts.cf)
+      const sanitisedOptions = optionKeys.filter(feature => cfFeatures.includes(feature));
     }
     this.cf = sanitisedOptions || {}
   }
