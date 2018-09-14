@@ -1,19 +1,19 @@
 require('../src/ecmascript_builtins')
 
-test('eval() is not accessible', async () => {
+test('eval() is not accessible', () => {
   expect(eval("1 + 1")).toBeUndefined()
 })
 
-test('new Function() is not accessible', async () => {
+test('new Function() is not accessible', () => {
   var sum = new Function('a', 'b', 'return a + b');
   expect(sum).not.toBe(Function)
 })
 
-test('WebAssembly is not accessible', async () => {
+test('WebAssembly is not accessible', () => {
   expect(WebAssembly).toBeUndefined()
 })
 
-test('Date.now does not advance in execution', async () => {
+test('Date.now does not advance in execution', () => {
   var start = Date.now()
 
   // Purposely do something that will hold the execution for a small

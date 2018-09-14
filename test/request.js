@@ -2,12 +2,12 @@ require('../src/request')
 
 global.fetch = require('jest-fetch-mock')
 
-test('cf is undefined if not configured', async () => {
+test('cf is undefined if not configured', () => {
   const request = new Request('http://example.com/')
   expect(request.cf).toBeUndefined()
 })
 
-test('discards invalid cf properties', async () => {
+test('discards invalid cf properties', () => {
   const request = new Request('http://example.com/', {
     cf: {
       something: "else",
@@ -23,7 +23,7 @@ test('discards invalid cf properties', async () => {
   })
 })
 
-test('allows all expected valid cf properties', async () => {
+test('allows all expected valid cf properties', () => {
   const request = new Request('http://example.com/', {
     cf: {
       scrapeShield: false,
