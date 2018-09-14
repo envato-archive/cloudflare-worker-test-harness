@@ -23,9 +23,12 @@
   require('cloudflare-worker-test-harness')
   ```
 
-- Write a test that excercises the `fetch` call
+- Write a test that excercises the `fetch` call. You're free to use
+  whatever test/mocking framework that you choose; here we are using
+  [`jest-fetch-mock`][jest_mock_url].
 
   ```js
+  global.fetch = require('jest-fetch-mock')
   const handleRequest = require('./worker')
 
   test('gets a HTTP 200', async () => {
@@ -57,6 +60,7 @@ considered a bug.
 npm test
 ```
 
+[jest_mock_url]: https://www.npmjs.com/package/jest-fetch-mock
 [worker_api_reference]: https://developers.cloudflare.com/workers/reference/
 [fetch_api_docs]: https://developer.mozilla.org/docs/Web/API/Fetch_API
 [cf_feature_docs]: https://developers.cloudflare.com/workers/reference/cloudflare-features/
