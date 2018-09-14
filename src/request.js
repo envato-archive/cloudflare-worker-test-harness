@@ -27,6 +27,7 @@ global.Request = class Request extends OldRequest {
   constructor(input, options) {
     super(input, options)
 
+    let sanitisedOptions = {}
     if (options && options.cf) {
       sanitisedOptions = Object.keys(options.cf)
         .filter(key => cfFeatures.includes(key))
@@ -35,6 +36,6 @@ global.Request = class Request extends OldRequest {
           return newObj;
         }, {});
     }
-    this.cf = sanitisedOptions || {}
+    this.cf = sanitisedOptions
   }
 }
