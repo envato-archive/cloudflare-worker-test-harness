@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "main": "index.js",
   "dependencies": {
-    "jest-fetch-mock": "^1.6.5",
     "whatwg-fetch": "^2.0.4"
   },
   "scripts": {
@@ -29,6 +28,7 @@
   "homepage": "https://github.com/envato/cloudflare-worker-test-harness#readme",
   "devDependencies": {
     "jest": "^23.6.0",
+    "jest-fetch-mock": "^1.6.5",
     "webpack": "^4.18.1",
     "webpack-cli": "^3.1.0"
   }
