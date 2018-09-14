@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "test": "yarn run jest"
+    "test": "jest"
   },
   "jest": {
     "testRegex": "(/test/.*|(\\.|/))\\.js?$"
