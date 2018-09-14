@@ -28,8 +28,7 @@ global.Request = class Request extends OldRequest {
     super(input, options)
 
     if (options && options.cf) {
-      let sanitisedOptions = {}
-      sanitisedOptions = Object.keys(options.cf)
+      let sanitisedOptions = Object.keys(options.cf)
         .filter(key => cfFeatures.includes(key))
         .reduce((newObj, key) => {
           newObj[key] = options.cf[key];
