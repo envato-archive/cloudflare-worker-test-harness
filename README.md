@@ -47,10 +47,10 @@ reference][worker_api_reference]. Any variation of this should be
 considered a bug.
 
 - [x] [Fetch API][fetch_api_docs] with [`cf` object][cf_feature_docs] for controlling features
-- [ ] [ECMAScript Builtins][emcascript_api_docs]
+- [x] [ECMAScript Builtins][emcascript_api_docs]
 - [ ] [Web Global APIs][web_global_api_docs]
 - [ ] [Encoding API][encoding_api_docs]
-- [ ] [URL API][url_api_docs]
+- [x] [URL API][url_api_docs]
 - [ ] [Streams API][streams_api_docs]
 - [ ] [Web Crypto API][web_crypto_api_docs]
 
