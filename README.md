@@ -31,7 +31,7 @@
   global.fetch = require('jest-fetch-mock')
   const handleRequest = require('./worker')
 
-  test('gets a HTTP 200', async () => {
+  test('cacheTtl is defined', async () => {
     fetch.mockResponse(JSON.stringify({status: 200}))
     const request = new Request('http://example.com/', {
       cf: { cacheTtl: 30 }
