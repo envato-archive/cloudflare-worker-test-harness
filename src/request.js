@@ -16,7 +16,10 @@ const cfFeatures = [
   "resolveOverride",
   "cacheKey",
   "cacheTtl",
-  "cacheTtlByStatus"
+  "cacheTtlByStatus",
+
+  // Only available in SSL for SaaS product offering.
+  "hostMetadata"
 ]
 
 const OldRequest = global.Request
