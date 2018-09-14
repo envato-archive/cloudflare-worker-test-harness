@@ -2,6 +2,11 @@ require('../src/request')
 
 global.fetch = require('jest-fetch-mock')
 
+test('cf is undefined if not configured', async () => {
+  const request = new Request('http://example.com/')
+  expect(request.cf).toBeUndefined()
+})
+
 test('discards invalid cf properties', async () => {
   const request = new Request('http://example.com/', {
     cf: {
