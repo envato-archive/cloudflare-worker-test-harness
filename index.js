@@ -1,2 +1,2 @@
 require('./src/request')
-require('./src/emcascript_builtins')
+require('./src/ecmascript_builtins')

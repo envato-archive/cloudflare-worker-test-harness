@@ -1,5 +1,6 @@
 module.exports = {
-  target: 'webworker'
+  entry: './index.js',
+  target: 'webworker',
   mode: 'production',
 
   // Prevent Webpack from getting angry if we bundle a large script
@@ -8,5 +9,5 @@ module.exports = {
   },
 
   // Prevent Webpack from shimming Node features and bloating our Worker scripts
-  node: false
+  node: false,
 };
