@@ -1,5 +1,17 @@
 # Cloudflare Worker Test Harness
 
+This project is an attempt to emulate the Cloudflare Worker runtime
+without needing to rely on the console UI. Using this project allows you
+to build worker scripts and run a test suite that is as close as
+possible what you'll have access to within Cloudflare. For example, `cf`
+available on `Request` for controlling Cloudflare features.
+
+Note: While _closer_, this isn't yet as close as it can be. Despite not
+relying on node specific APIs, it does use `require` due to keep the
+code separate. There are plans to remove this and prevent node specific
+APIs but for now it's a caveat. Once that is complete, we will also be
+moving to running the tests on v8.
+
 ### Usage
 
 - Add it to your `package.json` file.
