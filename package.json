@@ -1,0 +1,35 @@
+{
+  "name": "cloudflare-worker-test-harness",
+  "version": "0.0.1",
+  "main": "index.js",
+  "dependencies": {
+    "whatwg-fetch": "^2.0.4"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "test": "jest"
+  },
+  "jest": {
+    "testRegex": "(/test/.*|(\\.|/))\\.js?$"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/envato/cloudflare-worker-test-harness.git"
+  },
+  "keywords": [
+    "cloudflare",
+    "worker"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/envato/cloudflare-worker-test-harness/issues"
+  },
+  "homepage": "https://github.com/envato/cloudflare-worker-test-harness#readme",
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "jest-fetch-mock": "^1.6.5",
+    "webpack": "^4.18.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
